@@ -1,0 +1,39 @@
+{
+  "name": "apartment-stories",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jongtelles/apartment-stories.git"
+  },
+  "keywords": [
+    "stories",
+    "storytelling",
+    "SPA"
+  ],
+  "author": "jongtelles & Nick Mazmanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jongtelles/apartment-stories/issues"
+  },
+  "homepage": "https://github.com/Jongtelles/apartment-stories#readme"
+}
