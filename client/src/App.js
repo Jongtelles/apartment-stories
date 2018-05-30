@@ -6,14 +6,21 @@ class App extends Component {
     activeWindows: [],
   }
 
-  componentDidMount() {
-    console.log('sup');
-  }
+  // componentDidMount() {
+  //     const { params } = this.props.match;
+  //     this.ref = base.syncState(`${params}`, {
+  //       context: this,
+  //       state: 'fishes',
+  //     });
+  // }
 
   render() {
     return (
       <div className="App">
-        <h1>Stories from Mercado Street</h1>
+        <div className="headerTxt">
+          <h1>Stories from Mercado Street</h1>
+        </div>
+        <img className="bg img-fluid" src="./apt.jpg" alt="apartment building" />
       </div>
     );
   }
